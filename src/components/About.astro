@@ -1,0 +1,160 @@
+---
+import { Image } from 'astro:assets';
+import facund from '../images/facund.png';
+---
+
+<section class="about-section section">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="underline-green-light">About me</span>
+    </h2>
+    <div class="container about-container">
+      <div class="columns">
+        <div class="column main-column">
+          <div class="columns inner-columns">
+            <div class="column avatar-column center">
+              <figure class="avatar">
+                <Image
+                  class="avatar-img"
+                  src={facund}
+                  alt="facund fortuny"
+                  width={128}
+                  height={128}
+                  format="webp"
+                />
+              </figure>
+            </div>
+            <div class="column vertical-align">
+              <p class="bio-text">
+                I'm Lead Frontend Engineer and Head of Product at inbestMe,
+                where I work directly with the CEO on product strategy and
+                with the CTO on technical decisions. Our platform helps
+                users manage their investments through automated portfolios.
+                I love bridging the gap between product vision and technical
+                execution — leading the frontend architecture, defining
+                product roadmaps, and shipping features.
+              </p>
+              <br />
+              <p class="bio-text">
+                I've been in software development for over 12 years,
+                working across different countries and teams. I've built
+                everything from fintech platforms to web applications,
+                always focused on delivering real value to users. Based in
+                Valencia, Spain. Outside of work, you'll find me trail
+                running, hiking, or experimenting in the kitchen.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <h3 class="skills-title">Top Skills:</h3>
+          <div class="skills-content">
+            <ul class="skills">
+              <li>
+                <span class="label-green">React Native</span>
+              </li>
+              <li>
+                <span class="label-green">TypeScript</span>
+              </li>
+              <li>
+                <span class="label-green">FinTech</span>
+              </li>
+              <li>
+                <span class="label-green">Product Strategy</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125;
+    text-align: center;
+    margin: 0 0 1.5rem;
+  }
+
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .column {
+    flex: 1;
+    padding: 0.75rem;
+  }
+
+  .main-column {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .inner-columns {
+    justify-content: center;
+  }
+
+  .avatar-column {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+
+  .avatar {
+    width: 128px;
+    height: 128px;
+    margin: 0;
+  }
+
+  .avatar-img {
+    border-radius: 50%;
+  }
+
+  .bio-text {
+    color: #7a7a7a;
+  }
+
+  .skills-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.125;
+  }
+
+  .about-container {
+    padding: 30px;
+  }
+
+  .skills {
+    list-style: none;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 5px;
+    padding-left: 0;
+  }
+
+  .label-green {
+    background-color: #cdf2e2;
+    padding: 0.25rem 0.75rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #1f1f1f;
+    margin-bottom: 0.25rem;
+  }
+
+  @media (max-width: 481px) {
+    .main-column {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .avatar-column {
+      flex: 0 0 100%;
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+</style>

@@ -1,35 +1,18 @@
 {
   "name": "fortuny.dev",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "fortuny.dev",
-  "author": "Facund",
-  "keywords": [
-    "gatsby"
-  ],
+  "description": "fortuny.dev - Personal portfolio",
+  "author": "Facund Fortuny",
+  "type": "module",
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "dependencies": {
-    "babel-plugin-styled-components": "^2.1.4",
-    "bulma": "^0.9.4",
-    "gatsby": "^5.11.0",
-    "gatsby-plugin-image": "^3.11.0",
-    "gatsby-plugin-manifest": "^5.11.0",
-    "gatsby-plugin-sass": "^6.11.0",
-    "gatsby-plugin-sharp": "^5.11.0",
-    "gatsby-plugin-sitemap": "^6.11.0",
-    "gatsby-plugin-styled-components": "^6.11.0",
-    "gatsby-source-filesystem": "^5.11.0",
-    "gatsby-transformer-sharp": "^5.11.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.10.1",
-    "sass": "^1.63.6",
-    "styled-components": "^6.0.3"
+    "@astrojs/sitemap": "^3.2.1",
+    "astro": "^5.2.5",
+    "sass": "^1.83.4"
   }
 }

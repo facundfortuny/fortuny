@@ -1,0 +1,38 @@
+---
+import { Image } from 'astro:assets';
+import facundMountain from '../images/facundMountain.png';
+---
+
+<div class="hero-grid">
+  <Image
+    class="hero-image"
+    src={facundMountain}
+    alt="Facund Fortuny Mountain hiking"
+    widths={[640, 1024, 1440, 1920]}
+    sizes="100vw"
+    format="webp"
+  />
+  <div class="hero-overlay">
+    <slot />
+  </div>
+</div>
+
+<style>
+  .hero-grid {
+    display: grid;
+  }
+
+  .hero-image {
+    grid-area: 1/1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .hero-overlay {
+    grid-area: 1/1;
+    position: relative;
+    place-items: center;
+    display: grid;
+  }
+</style>

@@ -1,0 +1,15 @@
+{
+  "name": "facundfortuny",
+  "short_name": "facund",
+  "start_url": "/",
+  "background_color": "#CDF2E2",
+  "theme_color": "#CDF2E2",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

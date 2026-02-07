@@ -1,0 +1,63 @@
+---
+import Timeline from './Timeline.astro';
+import work from '../images/work.svg';
+---
+
+<section class="experience-section section" id="experience">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">
+        <span class="underline-green-light">Experience</span>
+      </h2>
+    </div>
+    <div class="columns">
+      <div class="column illustration-column">
+        <img class="work-image" src={work.src} alt="work-ilustration" />
+      </div>
+      <div class="column">
+        <Timeline />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .experience-section {
+    background-color: whitesmoke;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125;
+    margin: 0;
+  }
+
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .column {
+    flex: 1;
+    padding: 0.75rem;
+  }
+
+  .illustration-column {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  @media (max-width: 481px) {
+    .illustration-column {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+</style>
