@@ -18,9 +18,10 @@ import facund from '../images/facund.png';
                   class="avatar-img"
                   src={facund}
                   alt="facund fortuny"
-                  width={128}
-                  height={128}
+                  width={160}
+                  height={160}
                   format="webp"
+                  loading="lazy"
                 />
               </figure>
             </div>
@@ -36,7 +37,7 @@ import facund from '../images/facund.png';
               </p>
               <br />
               <p class="bio-text">
-                I've been in software development for over 12 years,
+                I've been in software development for over 14 years,
                 working across different countries and teams. I've built
                 everything from fintech platforms to web applications,
                 always focused on delivering real value to users. Based in
@@ -47,7 +48,7 @@ import facund from '../images/facund.png';
           </div>
         </div>
         <div class="column">
-          <h3 class="skills-title">Top Skills:</h3>
+          <h4 class="skills-title">Top Skills:</h4>
           <div class="skills-content">
             <ul class="skills">
               <li>
@@ -104,8 +105,8 @@ import facund from '../images/facund.png';
   }
 
   .avatar {
-    width: 128px;
-    height: 128px;
+    width: 160px;
+    height: 160px;
     margin: 0;
   }
 
@@ -114,7 +115,7 @@ import facund from '../images/facund.png';
   }
 
   .bio-text {
-    color: #7a7a7a;
+    color: #4a4a4a;
   }
 
   .skills-title {
@@ -124,7 +125,7 @@ import facund from '../images/facund.png';
   }
 
   .about-container {
-    padding: 30px;
+    padding: 0;
   }
 
   .skills {
@@ -137,6 +138,7 @@ import facund from '../images/facund.png';
 
   .label-green {
     background-color: #cdf2e2;
+    display: inline-block;
     padding: 0.25rem 0.75rem;
     font-weight: 300;
     font-size: 1.5rem;

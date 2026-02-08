@@ -11,7 +11,7 @@ export const siteConfig = {
   description: "Facund Fortuny Pons, Lead Frontend Engineer & Head of Product at inbestMe",
   keywords:
     "Facund Fortuny Pons Lead Frontend Engineer Head of Product inbestMe React Native TypeScript Fintech Valencia Barcelona",
-  twitterName: "@backcoder",
+  twitterName: "@fortunydev",
   twitter: "https://twitter.com/fortunydev",
   github: "https://github.com/facundfortuny",
   linkedin: "https://www.linkedin.com/in/facundfortuny",
