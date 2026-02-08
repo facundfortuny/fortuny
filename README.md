@@ -1,16 +1,20 @@
 # Facund Fortuny's Portfolio
-=============
 
 ## Link
 
-[Facund Fortuny](http://www.fortuny.dev)
+[fortuny.dev](https://www.fortuny.dev)
 
 ## Technologies
 
-For this development I have used the following stack.
-
-- Gatsby
-- Bulma
+- Astro 5
 - SASS
-- Styled Components
-- GraphQL
+- Cloudflare Pages
+
+## Development
+
+```bash
+npm install
+npm run dev       # Start dev server at localhost:4321
+npm run build     # Production build to dist/
+npm run preview   # Serve production build locally
+```
